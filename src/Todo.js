@@ -8,10 +8,10 @@ function Todo(props) {
     }
     return (
         <div className={itemClass} onClick={() => {props.onCheckedToggle(id);}}>
-            {content}
             <span
                 className="remove-todo"
                 onClick={(e) => {e.stopPropagation();props.onTodoRemove(id)}}>X</span>
+                {content}
         </div>
     );
 }

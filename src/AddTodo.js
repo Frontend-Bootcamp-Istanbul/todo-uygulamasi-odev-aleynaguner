@@ -33,7 +33,8 @@ class AddTodo extends React.Component {
             <input
                 type="text"
                 value={this.state.inputVal}
-                onChange={this.changeInput} />
+                onChange={this.changeInput} 
+                />
             <button>Ekle</button>
         </form>
     }
